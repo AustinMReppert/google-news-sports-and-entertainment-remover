@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Google News Sports and Entertainment Remover.",
+  "version": "1.0",
+  "description": "Removes the entertainment and sports sections from news.google.com.",
+  "icons": {
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://news.google.com/*"
+      ],
+      "js": [
+        "filter.js"
+      ]
+    }
+  ]
+}
